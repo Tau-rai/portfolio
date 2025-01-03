@@ -1,0 +1,17 @@
+/* src/styles.css */
+.theme-toggle-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  [data-theme="dark"] .theme-toggle-button {
+    color: white;
+  }
+  
+  [data-theme="light"] .theme-toggle-button {
+    color: black;
+  }
+  
