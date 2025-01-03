@@ -27,10 +27,10 @@ const Index = () => {
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Transforming Ideas into Scalable Solutions</h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
-            Hi, I'm Taurai — a Backend Engineer passionate about building robust infrastructure and elegant APIs.
+            Hi, I'm Taurai — a Software Developer passionate about building robust infrastructure and elegant APIs.
           </p>
           <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            With expertise in DevOps and distributed systems, I help companies scale their applications and automate their workflows.
+            With expertise in Full Stack Development, DevOps and distributed systems, I help companies scale their applications and automate their workflows.
           </p>
           <Button 
             onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })} 
