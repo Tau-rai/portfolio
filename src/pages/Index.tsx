@@ -22,18 +22,20 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center animate-fade-in">
+       {/* Hero Section */}
+       <section className="min-h-screen flex items-center justify-center px-4 pt-16 md:pt-0 animate-fade-in">
         <div className="text-center">
-          <h1 className="text-6xl font-bold mb-6">Transforming Ideas into Scalable Solutions</h1>
-          <p className="text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Transforming Ideas into Scalable Solutions</h1>
+          <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
             Hi, I'm Taurai — a Backend Engineer passionate about building robust infrastructure and elegant APIs.
           </p>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             With expertise in DevOps and distributed systems, I help companies scale their applications and automate their workflows.
           </p>
-          <Button onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })} 
-            className="bg-primary hover:bg-primary/90">
+          <Button 
+            onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })} 
+            className="bg-primary hover:bg-primary/90"
+          >
             View My Work
           </Button>
         </div>
