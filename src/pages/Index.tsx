@@ -3,13 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { toast } from "@/hooks/use-toast";
+import { useToast } from "@/hooks/use-toast";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+
 
 const Index = () => {
   const handleContactSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const { toast } = useToast();
     toast({
+      id: "contact-toast",
       title: "Message sent!",
       description: "Thanks for reaching out. I'll get back to you soon.",
     });
