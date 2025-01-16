@@ -5,6 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import  Footer from "@/components/Footer";
+import  ContactForm  from "@/components/ContactForm";
 
 
 const Index = () => {
@@ -27,17 +29,26 @@ const Index = () => {
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Transforming Ideas into Scalable Solutions</h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
-            Hi, I'm Taurai — a Backend Engineer passionate about building robust infrastructure and elegant APIs.
+            Hi, I'm Taurai — a Software Developer passionate about building robust infrastructure and elegant APIs.
           </p>
           <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             With expertise in DevOps and distributed systems, I help companies scale their applications and automate their workflows.
           </p>
-          <Button 
-            onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })} 
-            className="bg-primary hover:bg-primary/90"
-          >
-            View My Work
-          </Button>
+          <div className="space-x-4">
+            <Button 
+              onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })} 
+              className="bg-primary hover:bg-primary/90"
+            >
+              View My Work
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => window.open('/tau-resume.pdf', '_blank')}
+              className="hover:bg-muted/50"
+            >
+              Download Resume
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -207,14 +218,10 @@ const Index = () => {
               <Github className="h-5 w-5" />
             </Button>
           </div>
-          <form onSubmit={handleContactSubmit} className="space-y-6">
-            <Input placeholder="Your Name" />
-            <Input type="email" placeholder="Your Email" />
-            <Textarea placeholder="Your Message" className="min-h-[150px]" />
-            <Button type="submit" className="w-full">Send Message</Button>
-          </form>
+          <ContactForm />
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
