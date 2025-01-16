@@ -32,7 +32,7 @@ const Index = () => {
             Hi, I'm Taurai — a Software Developer passionate about building robust infrastructure and elegant APIs.
           </p>
           <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            With expertise in DevOps and distributed systems, I help companies scale their applications and automate their workflows.
+            With expertise in Full Stack Development, DevOps and distributed systems, I help companies scale their applications and automate their workflows.
           </p>
           <div className="space-x-4">
             <Button 
