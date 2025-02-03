@@ -32,7 +32,7 @@ const Index = () => {
             </Button>
             <Button
               variant="outline"
-              onClick={() => window.open('/tau-resume.pdf', '_blank')}
+              onClick={() => window.open('/resume.pdf', '_blank')}
               className="hover:bg-muted/50"
             >
               Download Resume
