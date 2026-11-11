@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Taurai Masaire — Résumé</title>
+<!-- Static per-weight fonts: variable fonts lose word spaces in Chrome's PDF text layer, which breaks ATS parsing. -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.1.0/400.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.1.0/500.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.1.0/600.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5.1.0/500.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5.1.0/600.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5.1.0/700.css" />
+<style>
+  @page { size: A4; margin: 0; }
+  :root {
+    --ink: #111113;
+    --soft: #3f3f46;
+    --muted: #71717a;
+    --line: #e4e4e7;
+    --accent: #5b7f00;
+    --accent-bg: #c6f432;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 210mm; height: 297mm; }
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 9.6pt;
+    line-height: 1.5;
+    color: var(--soft);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page { display: flex; flex-direction: column; height: 297mm; padding: 14mm 15mm 10mm; }
+  h1, h2, h3 { font-family: "Space Grotesk", "Inter", sans-serif; color: var(--ink); letter-spacing: -0.02em; }
+  a { color: inherit; text-decoration: none; }
+  ul { list-style: none; }
+
+  header { display: flex; justify-content: space-between; align-items: flex-end; gap: 8mm; padding-bottom: 6mm; border-bottom: 2px solid var(--ink); }
+  .mark { display: inline-grid; place-items: center; width: 13mm; height: 13mm; margin-bottom: 3.5mm; border-radius: 3.5mm; background: #050505; color: var(--accent-bg); font: 700 13pt "Space Grotesk", sans-serif; }
+  h1 { font-size: 29pt; line-height: 1; font-weight: 600; letter-spacing: -0.01em; }
+  .role { margin-top: 2.5mm; font-size: 12pt; font-weight: 500; color: var(--ink); }
+  .contact { text-align: right; font-size: 9.4pt; line-height: 1.8; color: var(--soft); }
+  .contact b { color: var(--ink); font-weight: 600; }
+
+  .summary { margin-top: 5mm; font-size: 10.2pt; line-height: 1.6; color: var(--soft); }
+  .summary strong { color: var(--ink); font-weight: 600; }
+
+  .grid { display: grid; grid-template-columns: 1fr 58mm; gap: 9mm; margin-top: 6.5mm; flex: 1; }
+  main, aside { display: flex; flex-direction: column; justify-content: space-between; gap: 5mm; }
+
+  h2 { margin-bottom: 3mm; padding-bottom: 1.8mm; border-bottom: 1px solid var(--line); font-size: 11pt; font-weight: 700; letter-spacing: 0; }
+
+  .job + .job { margin-top: 4.5mm; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
+  h3 { font-size: 11pt; font-weight: 600; }
+  .org { margin-top: 0.4mm; color: var(--muted); font-size: 9.4pt; font-weight: 500; }
+  .dates { flex: none; font-size: 9pt; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .job ul { margin-top: 2mm; }
+  .job li, .feature li { padding-left: 4.2mm; text-indent: -4.2mm; line-height: 1.45; }
+  .job li + li, .feature li + li { margin-top: 1.1mm; }
+  .bullet { display: inline-block; width: 4.2mm; text-indent: 0; color: var(--muted); }
+
+  .feature .desc { margin-top: 2mm; line-height: 1.5; }
+  .feature .stack { margin-top: 1.6mm; line-height: 1.5; }
+  .feature .stack b { color: var(--ink); font-weight: 600; }
+
+  .group + .group { margin-top: 3.2mm; }
+  .group b { display: block; margin-bottom: 1.4mm; color: var(--ink); font-size: 9.6pt; font-weight: 600; }
+  .group p { line-height: 1.5; }
+
+  .list li + li { margin-top: 3mm; }
+  .list b { display: block; color: var(--ink); font-weight: 600; font-size: 10.2pt; line-height: 1.35; }
+  .nw { white-space: nowrap; }
+  .list > li > span { display: block; margin-top: 0.5mm; color: var(--muted); font-size: 9pt; line-height: 1.45; }
+
+  footer { display: flex; justify-content: space-between; margin-top: 4mm; padding-top: 3.5mm; border-top: 1px solid var(--line); font-size: 8.6pt; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div>
+      <div class="mark">TM</div>
+      <h1>Taurai Masaire</h1>
+      <p class="role">Full Stack Software Developer · Certified Cloud Engineer</p>
+    </div>
+    <div class="contact">
+      <div><b>Johannesburg, South Africa</b></div>
+      <div><a href="mailto:taumasaire@gmail.com">taumasaire@gmail.com</a></div>
+      <div><a href="https://www.linkedin.com/in/taurai-masaire">linkedin.com/in/taurai-masaire</a></div>
+      <div><a href="https://github.com/tau-rai">github.com/tau-rai</a></div>
+    </div>
+  </header>
+
+  <p class="summary">
+    Software developer building <strong>secure, scalable and intelligent</strong> platforms — backend and cloud-native
+    architecture in <strong>Go, Node.js and Python</strong>, frontends in <strong>React, Vue and Angular</strong>, and
+    <strong>agentic AI and MCP tool integrations</strong> shipped to production on <strong>AWS and GCP</strong>.
+    I own products end to end, from system design to deployment and maintenance.
+  </p>
+
+  <div class="grid">
+    <main>
+      <section>
+        <h2>Experience</h2>
+        <div class="job">
+          <div class="job-head"><h3>Full Stack Software Developer</h3><span class="dates">Jan 2025 – Present</span></div>
+          <p class="org">Ruka Africa · Johannesburg</p>
+          <ul>
+            <li><span class="bullet">–</span>Engineer secure, scalable backend services in Node.js, Go and Python, improving performance and reliability.</li>
+            <li><span class="bullet">–</span>Design microservices and RESTful APIs that integrate internal and external systems.</li>
+            <li><span class="bullet">–</span>Build responsive, modular frontend components with Vue.js and Angular.</li>
+            <li><span class="bullet">–</span>Deploy and manage numerous applications across AWS and GCP, improving reliability and scalability.</li>
+            <li><span class="bullet">–</span>Integrate AI-driven features for intelligent automation and data-driven decision-making.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-head"><h3>Software Engineer</h3><span class="dates">Jul 2024 – Present</span></div>
+          <p class="org">Equipped Solutions Holdings · Johannesburg</p>
+          <ul>
+            <li><span class="bullet">–</span>Revamped the company website, improving user experience and performance.</li>
+            <li><span class="bullet">–</span>Own hosting and maintenance of the company website, ensuring high availability and reliability.</li>
+            <li><span class="bullet">–</span>Design, build, test and deploy applications; take part in code reviews and production debugging.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Featured Project</h2>
+        <div class="feature">
+          <div class="job-head"><h3>Jamii Events</h3><span class="dates"><a href="https://jamiievents.co.za/">jamiievents.co.za</a></span></div>
+          <p class="org">Event ticketing marketplace · South Africa &amp; Zimbabwe</p>
+          <p class="desc">A marketplace to discover, create and sell tickets for concerts, festivals, sport and the arts across South Africa and Zimbabwe — with event creation, search, categories and a full cart-to-checkout flow. Built, deployed and maintained end to end.</p>
+          <p class="stack"><b>Stack:</b> Go (Gin), MySQL, Redis, React, TypeScript, PWA, React Native (Expo), Yoco &amp; Paynow payments, Docker, Nginx, Google Cloud</p>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <section>
+        <h2>Skills</h2>
+        <div class="group"><b>Backend</b><p>Go, Node.js, Python, REST APIs, Microservices</p></div>
+        <div class="group"><b>Frontend</b><p>React, Vue.js, Angular, TypeScript, PWAs</p></div>
+        <div class="group"><b>Cloud &amp; DevOps</b><p>AWS, Google Cloud, Docker, CI/CD, Nginx, Linux, Cloud Security</p></div>
+        <div class="group"><b>AI</b><p>Agentic AI integrations, MCP tools, AI feature integration</p></div>
+        <div class="group"><b>Data</b><p>PostgreSQL, MySQL, MongoDB, Data analysis</p></div>
+      </section>
+
+      <section>
+        <h2>Certifications</h2>
+        <ul class="list">
+          <li><b>Associate Cloud Engineer</b><span>Google Cloud</span></li>
+          <li><b>Data Analyst Associate</b><span>Microsoft Certified</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <ul class="list">
+          <li><b>Software Engineering</b><span>ALX Africa | Holberton School · <span class="nw">2023 – 2024</span></span></li>
+          <li><b>BCom, Business Management</b><span>National University of Science &amp; Technology · <span class="nw">2010 – 2014</span></span></li>
+        </ul>
+      </section>
+
+    </aside>
+  </div>
+
+  <footer><span>Interests: hiking · cricket &amp; football · experimenting with emerging AI tech</span><span>References available on request</span></footer>
+</div>
+</body>
+</html>
