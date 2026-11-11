@@ -1,10 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev-Tau</title>
+    <meta name="theme-color" content="#050505" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Taurai Masaire — Full Stack Developer & Cloud Engineer</title>
+    <meta
+      name="description"
+      content="Taurai Masaire is a Johannesburg-based full-stack software developer and certified cloud engineer building secure, scalable and AI-powered platforms with Go, Node.js, Python, React, Vue, AWS and GCP."
+    />
+    <meta name="author" content="Taurai Masaire" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Taurai Masaire — Full Stack Developer & Cloud Engineer" />
+    <meta
+      property="og:description"
+      content="Secure, scalable, intelligent software — from Go microservices to AI-powered products on AWS & GCP."
+    />
+    <meta property="og:url" content="https://taurai.netlify.app/" />
+    <meta property="og:image" content="https://taurai.netlify.app/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link rel="canonical" href="https://taurai.netlify.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    />
+    <script>
+      // Apply the saved theme before first paint to avoid a flash; dark is the default.
+      try {
+        if (localStorage.getItem("taurai-portfolio-theme") === "light") {
+          document.documentElement.classList.replace("dark", "light");
+        }
+      } catch {}
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Taurai Masaire",
+        "jobTitle": "Full Stack Software Developer",
+        "address": { "@type": "PostalAddress", "addressLocality": "Johannesburg", "addressCountry": "ZA" },
+        "sameAs": ["https://www.linkedin.com/in/taurai-masaire", "https://github.com/tau-rai"]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
